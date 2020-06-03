@@ -42,16 +42,24 @@ nav:hover .nav-link, nav:hover .media, nav:hover .avatar{
     transition:  230ms linear;
 }
 
+.avatar{
+    border-radius: 50%;
+    opacity: 0;
+    margin: 2rem auto;
+    visibility: hidden;
+}
+
 .nav-ul{
-    margin: 0;
+    margin: auto 0;
     padding: 0;
+    width: inherit;
 }
 
 .nav-item { 
     list-style: none; 
-    padding: 1rem;
     display: block;
-    width: 100;
+    margin: 2rem 0rem;
+    width: 100%;
     transition: opacity .3s linear;
     text-transform: uppercase;
 }
@@ -73,16 +81,10 @@ nav:hover .nav-link, nav:hover .media, nav:hover .avatar{
     flex-direction: row;
     opacity: 0;
     visibility: hidden;
+    margin-bottom: 1rem;
 }
 
 .media a:hover{ filter: invert(1); }
-
-.avatar{
-    border-radius: 50%;
-    margin-bottom: 20%;
-    opacity: 0;
-    visibility: hidden;
-}
 
 @-webkit-keyframes gradientBG {
 	0% { background-position: 0% 50%; }

@@ -89,10 +89,6 @@ footer p{
 
 footer a:hover{ filter: invert(1); }
 
-@media screen and (max-device-width: 900px) {
-    font-size: 32px;    
-}
-
 /* Scroll bar settings */
 ::-webkit-scrollbar
 {
