@@ -18,7 +18,8 @@ html{
 }
 
 body{
-    margin: 0px auto;
+    margin: 0;
+    padding: 0;
     font-family: 'PT Sans', sans-serif;
 }
 /*
@@ -36,86 +37,6 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.2em;
 */
-nav{
-    position: sticky;
-    top: 0;
-    background-color: #2A1B3D;
-    height: 8vh;
-    z-index: 5;
-}
-
-nav ul{
-    list-style: none;
-    padding-left: 0;
-    float: right;
-}
-
-nav li{
-    display: inline-block; 
-    text-decoration: none;
-    position: relative;
-    text-transform: uppercase;
-    transition-duration: 0.3s;
-}
-
-nav a{
-    text-decoration: none;
-    padding: 1rem;
-    color: #D82F87;
-    transition: 0.2s linear;
-    transition-delay: 0.1s;
-    cursor: pointer;
-}
-
-nav a:hover, nav li:hover, li:hover .menuLi, ul li ul li:hover .menuLi2{
-    color: #EBF69C;
-    cursor: pointer;
-}
-
-.dropdown{
-    background: #2A1B3D;
-    visibility: hidden;
-    color: #D82F87;
-    min-width: 5rem;
-    margin: 0;
-    margin-top: 1rem;
-    display: none;
-    position: absolute;
-    transition: all 0.1s ease;
-    margin-top: 1rem;
-    left: 0;
-    font-size: 0.8em;
-}
-
-
-.dropdown a{
-    display: block;
-}
-
-#dropP:hover .dropdown{
-    visibility: visible;
-    display: block;
-    z-index: 1;
-}
-
-#logo a{
-    float: left;
-    font-family: streamster;
-    color: #D82F87;
-    font-size: 1.5rem;
-    text-shadow: 3px 3px 2px black;
-    transform: rotate(-5deg);
-    text-decoration: none;
-    transition: 0.25s linear;
-    padding-top: 0.3em;
-}
-
-#logo a:hover{
-    transform: rotate(5deg); 
-    filter: blur(1px);
-    color: #EBF69C;
-}
-
 
 .quote{
     color:#EBF69C;
